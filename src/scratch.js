@@ -493,3 +493,50 @@
 //     [1, 0, translateX],
 //     [0, 1, translateY]
 // ]
+
+    //   projMatrix[0][0] = focLen
+    //   projMatrix[1][1] = focLen / aspectRatio
+    //   projMatrix[2][2] = -(fFar + fNear) / (fFar - fNear)
+    //   projMatrix[2][3] = -(2 * fFar *fNear) / (fFar - fNear)
+    //   projMatrix[3][2] = -1
+
+    //   projMatrix[0][0] = (2 * fNear) / (fRight - fLeft)
+    //   projMatrix[1][1] = (2 * fNear) / (fTop - fBottom)
+    //   projMatrix[2][2] = (fFar) / (fFar - fNear)
+    //   projMatrix[3][2] = -(fFar * fNear) / (fFar - fNear)
+
+    // function matrixTransform2D (inputMatrix, transformMatrix, outputMatrix) {
+
+    //     outputMatrix[0] = inputMatrix[0] * transformMatrix[0][0] + inputMatrix[1] * transformMatrix[0][1] + inputMatrix[2] * transformMatrix[0][2] 
+    //     outputMatrix[1] = inputMatrix[0] * transformMatrix[1][0] + inputMatrix[1] * transformMatrix[1][1] + inputMatrix[2] * transformMatrix[1][2] 
+       
+    // }
+
+    // function multiplyNormalizeMatrix(inputMatrix, transformMatrix, outputMatrix) {
+
+    //     outputMatrix[0] = inputMatrix[0] * transformMatrix[0][0] + inputMatrix[1] * transformMatrix[0][1] + inputMatrix[2] * transformMatrix[0][2] + inputMatrix[3] * transformMatrix[0][3]
+    //     outputMatrix[1] = inputMatrix[0] * transformMatrix[1][0] + inputMatrix[1] * transformMatrix[1][1] + inputMatrix[2] * transformMatrix[1][2] + inputMatrix[3] * transformMatrix[1][3]
+    //     outputMatrix[2] = inputMatrix[0] * transformMatrix[2][0] + inputMatrix[1] * transformMatrix[2][1] + inputMatrix[2] * transformMatrix[2][2] + inputMatrix[3] * transformMatrix[2][3]
+    //     outputMatrix[3] = inputMatrix[0] * transformMatrix[3][0] + inputMatrix[1] * transformMatrix[3][1] + inputMatrix[2] * transformMatrix[3][2] + inputMatrix[3] * transformMatrix[3][3]
+        
+    //         normalizeMatrix(outputMatrix)
+    
+    // }
+
+//     const fBottom = -renderCanvas.height / 2
+// const fTop = renderCanvas.height / 2
+//const focLen = 1 / (Math.tan(rdFOV/2))
+
+//const fLeft = -renderCanvas.width / 2
+// const fRight = renderCanvas.width / 2
+
+// matrix constants
+
+// const matrix4x4 = [
+//     [1, 0, 2, 0],
+//     [0, 3, 0, 4],
+//     [0, 0, 5, 0],
+//     [6, 0, 0, 7],
+// ]
+
+// const matrix1x4 = [2, 5, 1, 8]
