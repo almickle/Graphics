@@ -10,7 +10,6 @@ fetch('https://raw.githubusercontent.com/OneLoneCoder/videos/master/teapot.obj')
 
 
 function parseData(data, mesh) {
-    //console.log(data.split(/\r?\n/))
     const arr = data.split(/\r?\n/)
     const vertices = []
     const faces = []
@@ -45,8 +44,4 @@ function parseData(data, mesh) {
         mesh.push(tri)
     })
 
-    console.log(mesh)
-
-    console.log('Vertices: ' + vertices.length)
-    console.log('Faces: ' + faces.length)
 }
