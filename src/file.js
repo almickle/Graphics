@@ -1,7 +1,7 @@
 
 const teapotOBJ = []
 
-fetch('ref/teapot.txt')
+fetch('https://raw.githubusercontent.com/almickle/Graphics/main/ref/teapot.txt')
 .then(resp => resp.text())
 .then(data => {
     parseData(data, teapotOBJ)
