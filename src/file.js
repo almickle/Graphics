@@ -1,7 +1,7 @@
 
 const teapotOBJ = []
 
-fetch('https://raw.githubusercontent.com/OneLoneCoder/videos/master/teapot.obj')
+fetch('ref/teapot.txt')
 .then(resp => resp.text())
 .then(data => {
     parseData(data, teapotOBJ)

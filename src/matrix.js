@@ -1,9 +1,6 @@
 const windowWidth = window.innerWidth
 const windowHeight = window.innerHeight
 
-console.log(windowWidth)
-console.log(windowHeight)
-
 const renderCanvas = document.getElementById("renderCanvas")
       renderCanvas.width = windowWidth
       renderCanvas.height = windowHeight
